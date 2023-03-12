@@ -1,0 +1,17 @@
+#navbar {
+    font-size: 0.8rem;
+}
+
+#navbar ul li {
+    margin: 5px;
+    padding: 6px 0px;
+    box-sizing: border-box;
+}
+
+#services-section .box {
+    height: 335px; 
+}
+
+#contact-section form .inline label {
+    padding: 0;
+}

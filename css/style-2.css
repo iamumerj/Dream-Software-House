@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+
+header {
+    position: sticky;
+    top: 0;
+    animation: width 1s ease-in-out forwards;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.4;
+    border-radius: 20px;
+}
+
+@keyframes width {
+    from {
+        width: 100%;
+        top: 0px;
+        margin: auto;
+        /* border-radius: 0px; */
+    }
+
+    to {
+        width: 95%;
+        top: 10px;
+        margin: auto;
+        /* border-radius: 20px; */
+    }
+}
+
+#navbar {
+    display: grid;
+    grid-template-columns: auto auto;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#navbar img {
+    width: 75px;
+    height: 40px;
+    border-radius: 15px;
+    margin: 4px 10px;
+}
+
+#navbar img:hover {
+    cursor: pointer;
+    color: rgb(114 109 109);
+}
+
+/* #navbar img {
+    width: 100px;
+    height: 85px;
+    /* border-radius: 10px; 
+} */
+
+#navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar ul li {
+    list-style: none;
+    /* margin: 6px;
+    padding: 8px 0px;
+    box-sizing: border-box; */
+    padding: 16px 15px;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    color: white;
+    overflow: hidden;
+}
+
+#navbar ul li a:hover {
+    color: rgb(233, 218, 218);
+}
+
+#home::before {
+    content: "";
+    background: url('/img/bg-1.jpg') center center/cover;
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+/* Home */
+#home::before {
+    content: "";
+    background: url('../img/bg-1.jpg') center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 500px;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid black; */
+    /* margin: 100px 10px; */
+}
+
+#home #home-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 450px;
+}
+
+#home-section .h-primary {
+    padding: 8px;
+}
+
+#home-section .center {
+    padding: 10px;
+    padding-bottom: 18px;
+}
+
+#home-section .btn {
+    height: 40px;
+    padding: 10px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#services {
+    margin: 30px;   
+}
+
+#services-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+#services-section .box {
+    width: 40%;
+    border: 2px solid black;
+    margin: 2px;
+    padding: 5px;
+}
+
+#services-section .box img {
+    display: block;
+    width: 50%;
+    margin: auto;
+    padding: 5px;
+}
+
+#services-section .box:nth-child(4) img {
+    width: 52%;
+}
+
+#services-section .box .center {
+    font-size: 1rem;
+}
+
+/* Animations */
+#services-section .box {
+    transition: all 0.5s ease-in-out;
+} 
+
+#services-section .box:hover {
+    width: 43%;
+    border-radius: 20px;
+}
+
+#about #about-section {
+    margin: 10px 4px;
+}
+
+#contact-section::before {
+    content: "";
+    background: url('/project\ 3/img/bg-3.jpg');
+    width: 100%;
+    height: 350px;
+    position: absolute;
+    z-index: -1;
+    left: 0px;
+    opacity: 0.5;
+}
+
+#contact-section form {
+    margin: 5px;
+}
+
+#contact-section form textarea {
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    padding: 5px;
+    display: block;
+    width: 50%;
+    margin: auto;
+}
+
+#contact-section {
+    margin: 20px auto;
+    width: 40%;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#contact-section .block input {
+    display: block;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    width: 100%;
+}
+
+#contact-section .inline label {
+    padding: 5px 10px;
+}
+
+footer {
+    background-color: #3d3d3d;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+}
+
+.h-secondary {
+    font-size: 1.3rem;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+}

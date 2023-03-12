@@ -1,0 +1,27 @@
+#services-section .box {
+    height: 350px;
+}
+
+#services-section .box .h-secondary {
+    font-size: 1rem;
+    padding: 4px;
+}
+
+#services-section .box .center {
+    font-size: 0.8rem;
+    text-align: none;
+}
+
+#about-section .h-secondary {
+    margin: 10px;
+}
+
+#contact-section form .inline label {
+    display: inline-block;
+    width: 150px;
+    margin: 2px 5px;
+}
+
+#contact-section::before {
+    height: 580px;
+}

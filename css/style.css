@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Utility Classes */
+
+.h-primary {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2rem;
+}
+
+.h-secondary {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.3rem;
+}
+
+.center {
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+}
+
+.btn {
+    background-color: transparent;
+    border-radius: 14px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(114 109 109);
+}
+
+.btn a {
+    color: white;
+    text-decoration: none;
+    padding: 4px 10px;
+}
+
